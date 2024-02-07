@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/mentorbot")
+@app.route("/")
 def homepage():
     return render_template("home.html")
 
@@ -22,7 +22,8 @@ def get_bot_response():
     # print(response1)
     #query_results = svhs.query_engine.query(query)
     score = response1.source_nodes[0].score
-    response2 = blender.llm_chain.run(query)
+    # response2 = blender.llm_chain.run(query)
+    response2 = "Hi"
     # print("response 2")
     # print(response2)
     final =""

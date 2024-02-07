@@ -1,7 +1,7 @@
 #from chatbot import CB
 from flask import Flask, render_template, request
 import backend as svhs
-import blender as blender
+#import blender as blender
 
 app = Flask(__name__)
 
@@ -27,7 +27,7 @@ def get_bot_response():
     # print(response2)
     final =""
 
-    if(score > 0.6):
+    if(score > -1):
         final = response1
     else:
         prompt = " I'm sorry! I am still a beta version & you are asking something out of my knowledge base (Zero to IPO by David Smith).  Please stick to the domain knowledge. However, I can converse with my artfical inteligence. "

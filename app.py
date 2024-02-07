@@ -38,4 +38,4 @@ def get_bot_response():
 
 
 
-app.run(debug = False)
+app.run()
